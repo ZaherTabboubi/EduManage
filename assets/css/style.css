@@ -1,0 +1,704 @@
+/* ================================
+   EDUMANAGE LANDING PAGE
+   MODERN BLUE SAAS DESIGN
+================================ */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+:root{
+
+    --blue:#2563eb;
+    --dark-blue:#1e40af;
+    --light:#f8fafc;
+    --text:#0f172a;
+
+}
+
+
+
+body{
+
+    background:#f8fafc;
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ================================
+ NAVBAR
+================================ */
+
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+}
+
+
+
+.navbar{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-top:20px;
+
+    padding:18px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.8);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:25px;
+
+    font-weight:700;
+
+    color:var(--blue);
+
+}
+
+
+
+.logo i{
+
+    font-size:30px;
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#334155;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:var(--blue);
+
+}
+
+
+
+.login-btn{
+
+    text-decoration:none;
+
+    background:var(--blue);
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--dark-blue);
+
+}
+
+
+
+
+
+/* ================================
+ HERO
+================================ */
+
+
+.hero{
+
+    min-height:100vh;
+
+    padding:150px 8% 80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:#2563eb;
+
+    filter:blur(150px);
+
+    opacity:.25;
+
+    right:-200px;
+
+    top:100px;
+
+}
+
+
+
+
+.hero-left{
+
+    max-width:600px;
+
+}
+
+
+
+.hero-left h1{
+
+    font-size:60px;
+
+    line-height:1.1;
+
+}
+
+
+
+.hero-left h1 span{
+
+    color:var(--blue);
+
+}
+
+
+
+.hero-left p{
+
+    margin-top:25px;
+
+    color:#64748b;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+.hero-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.btn-primary,
+.btn-secondary{
+
+    padding:15px 30px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-primary{
+
+    background:var(--blue);
+
+    color:white;
+
+}
+
+
+
+.btn-secondary{
+
+    border:2px solid var(--blue);
+
+    color:var(--blue);
+
+}
+
+
+
+.btn-primary:hover,
+.btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ================================
+ DASHBOARD PREVIEW
+================================ */
+
+
+.dashboard-preview{
+
+    width:520px;
+
+    height:350px;
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 30px 80px rgba(37,99,235,.25);
+
+    overflow:hidden;
+
+    animation:float 5s infinite ease-in-out;
+
+}
+
+
+
+@keyframes float{
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+}
+
+
+
+.preview-header{
+
+    height:35px;
+
+    background:#e2e8f0;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    padding-left:15px;
+
+}
+
+
+
+.preview-header div{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+}
+
+
+
+
+.preview-body{
+
+    display:flex;
+
+    height:315px;
+
+}
+
+
+
+.preview-body .sidebar{
+
+    width:90px;
+
+    background:#1e40af;
+
+}
+
+
+
+.preview-body .content{
+
+    flex:1;
+
+    padding:20px;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+.card{
+
+    height:70px;
+
+    flex:1;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #dbeafe,
+        #ffffff
+    );
+
+    border-radius:15px;
+
+}
+
+
+
+.table{
+
+    margin-top:20px;
+
+    height:120px;
+
+    border-radius:15px;
+
+    background:
+
+    repeating-linear-gradient(
+
+    180deg,
+
+    #e2e8f0,
+
+    #e2e8f0 10px,
+
+    white 10px,
+
+    white 25px
+
+    );
+
+}
+
+
+
+
+
+/* ================================
+ FEATURES
+================================ */
+
+
+.features{
+
+    padding:80px 8%;
+
+}
+
+
+
+.features h2,
+.about h2,
+.contact h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.feature-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.feature-card i{
+
+    font-size:35px;
+
+    color:var(--blue);
+
+}
+
+
+
+.feature-card h3{
+
+    margin:20px 0 10px;
+
+}
+
+
+
+
+
+/* ================================
+ ABOUT CONTACT
+================================ */
+
+
+.about,
+.contact{
+
+    padding:80px 15%;
+
+    text-align:center;
+
+}
+
+
+
+.about p{
+
+    color:#64748b;
+
+    line-height:2;
+
+}
+
+
+
+.contact-info p{
+
+    margin:15px;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* ================================
+ FOOTER
+================================ */
+
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ================================
+ RESPONSIVE
+================================ */
+
+
+@media(max-width:1000px){
+
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+
+
+.hero-left h1{
+
+    font-size:45px;
+
+}
+
+
+
+.dashboard-preview{
+
+    width:90%;
+
+}
+
+
+
+.feature-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+
+}
+
+
+
+.feature-card{
+
+background:rgba(255,255,255,.7);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.5);
+
+}
+
+.logo-img{
+
+    width:45px;
+    border-radius: 5px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}

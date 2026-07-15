@@ -1,0 +1,556 @@
+/* ===============================
+   EDUMANAGE SIGNUP PAGE
+================================ */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter","Poppins","Segoe UI",sans-serif;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #eff6ff,
+        #f8fafc
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+/* background decoration */
+
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    background:#2563eb;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    top:-150px;
+
+    right:-150px;
+
+}
+
+
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#60a5fa;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    left:-120px;
+
+}
+
+
+
+
+
+
+/* ===============================
+SIGNUP CARD
+================================*/
+
+
+.signup-box{
+
+
+    width:430px;
+
+
+    background:white;
+
+
+    padding:45px;
+
+
+    border-radius:25px;
+
+
+
+    box-shadow:
+
+    0 25px 60px rgba(15,23,42,.12);
+
+
+
+    text-align:center;
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    animation:show .5s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes show{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+LOGO
+================================*/
+
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.logo i{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:18px;
+
+
+    background:#dbeafe;
+
+
+    font-size:30px;
+
+
+}
+
+
+
+.logo h1{
+
+
+    font-size:30px;
+
+    font-weight:800;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+TEXT
+================================*/
+
+
+.signup-box h2{
+
+
+    font-size:28px;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.signup-box p{
+
+
+    color:#64748b;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+INPUTS
+================================*/
+
+
+.input-box{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+    background:#f1f5f9;
+
+
+    padding:15px 18px;
+
+
+    border-radius:15px;
+
+
+    margin-bottom:18px;
+
+
+    border:1px solid transparent;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.input-box i{
+
+
+    color:#2563eb;
+
+    font-size:17px;
+
+
+}
+
+
+
+.input-box input{
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    background:transparent;
+
+
+    width:100%;
+
+
+    font-size:15px;
+
+
+    color:#0f172a;
+
+
+}
+
+
+
+.input-box:focus-within{
+
+
+    background:white;
+
+
+    border-color:#2563eb;
+
+
+
+    box-shadow:
+
+
+    0 0 0 4px rgba(37,99,235,.15);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+BUTTON
+================================*/
+
+
+button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #3b82f6
+
+    );
+
+
+
+    color:white;
+
+
+    font-size:17px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(37,99,235,.3);
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:translateY(-3px);
+
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(37,99,235,.4);
+
+
+}
+
+
+
+button:active{
+
+
+    transform:scale(.97);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+LINK
+================================*/
+
+
+.back-login{
+
+
+    display:block;
+
+
+    margin-top:20px;
+
+
+    color:#2563eb;
+
+
+    text-decoration:none;
+
+
+    font-size:14px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.back-login:hover{
+
+
+    text-decoration:underline;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+MOBILE
+================================*/
+
+
+@media(max-width:500px){
+
+
+.signup-box{
+
+
+    width:90%;
+
+
+    padding:30px;
+
+
+}
+
+
+
+.logo h1{
+
+
+    font-size:24px;
+
+
+}
+
+
+}
+.logo-img{
+
+    width:45px;
+    border-radius: 5px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
